@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <div className='flex col gap-4 mb-4'>
-        <h1>Test CW Client Production</h1>
+        <h1>CW Client Production</h1>
       </div>
       <div className='flex col gap-4 mb-4'>
         <button
