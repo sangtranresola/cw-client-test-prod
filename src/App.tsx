@@ -15,18 +15,16 @@ function App() {
   // };
 
   const sendCustomerData= () => {
-    window.__DECA_CLIENT__01kwjtk51hyf11teqa4szf6z9r.chat.setVariable("userInfo", {
-      "customerName": "John Doe",
-      "customerId": "zxy39x4a3olq5",
-    });
+    window.__DECA_CLIENT__01kwjtk51hyf11teqa4szf6z9r.chat.setVariable("userInfo", JSON.stringify({
+      "customerName": "Kevin",
+      "customerId": "z1y2",
+    }));
   };
 
   const sendNavigationsLog= () => {
     const pages = ['url1.com', 'url2.com', 'url3.com'];
-    window.__DECA_CLIENT__01kwjtk51hyf11teqa4szf6z9r.chat.setVariable("pages", pages.join(', '));
+    window.__DECA_CLIENT__01kwjtk51hyf11teqa4szf6z9r.chat.setVariable("page_url", pages.join(', '));
   };
-
-  
 
   return (
     <>
