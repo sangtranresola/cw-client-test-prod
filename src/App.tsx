@@ -11,21 +11,21 @@ declare global {
 
 
 function App() {
-  // const openCWwbh1= () => {
-    // window.__DECA_CLIENT__01j19dwrdd4nhwey9661cvwbh1.chat.toggleChatWindow();
+  const openCWwbh1= () => {
+    window.__DECA_CLIENT__01j19dwrdd4nhwey9661cvwbh1.chat.toggleChatWindow();
+  };
+
+  // const sendCustomerData= () => {
+  //   window.__DECA_CLIENT__01kwtsanhgcpy8t503d5p0254h.chat.setVariable("userInfo", JSON.stringify({
+  //     "customerName": "Kevin",
+  //     "customerId": "z1y2",
+  //   }));
   // };
 
-  const sendCustomerData= () => {
-    window.__DECA_CLIENT__01kwtsanhgcpy8t503d5p0254h.chat.setVariable("userInfo", JSON.stringify({
-      "customerName": "Kevin",
-      "customerId": "z1y2",
-    }));
-  };
-
-  const sendNavigationsLog= () => {
-    const pages = ['url1.com', 'url2.com', 'url3.com'];
-    window.__DECA_CLIENT__01kwtsanhgcpy8t503d5p0254h.chat.setVariable("page_url", pages.join(', '));
-  };
+  // const sendNavigationsLog= () => {
+  //   const pages = ['url1.com', 'url2.com', 'url3.com'];
+  //   window.__DECA_CLIENT__01kwtsanhgcpy8t503d5p0254h.chat.setVariable("page_url", pages.join(', '));
+  // };
 
   return (
     <>
@@ -33,12 +33,12 @@ function App() {
         <h1>CW Client Production</h1>
       </div>
       <div className='flex col gap-4 mb-4'>
-        {/* <button
+        <button
           className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
           onClick={openCWwbh1}>
           OPEN CW ID: ...wbh1 
-        </button> */}
-        <button
+        </button>
+        {/* <button
           className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
           onClick={sendCustomerData}>
           Send CustomerInfo
@@ -47,7 +47,7 @@ function App() {
           className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
           onClick={sendNavigationsLog}>
           Send Navigations Log
-        </button>
+        </button> */}
       </div>
     </>
   )
