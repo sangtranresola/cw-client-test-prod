@@ -5,9 +5,10 @@ import './App.css'
 declare global {
   interface Window {
     __DECA_CLIENT__01j19dwrdd4nhwey9661cvwbh1: any;
-    __DECA_CLIENT__01kwjtk51hyf11teqa4szf6z9r: any;
+    __DECA_CLIENT__01kwtsanhgcpy8t503d5p0254h: any;
   }
 }
+
 
 function App() {
   // const openCWwbh1= () => {
@@ -15,7 +16,7 @@ function App() {
   // };
 
   const sendCustomerData= () => {
-    window.__DECA_CLIENT__01kwjtk51hyf11teqa4szf6z9r.chat.setVariable("userInfo", JSON.stringify({
+    window.__DECA_CLIENT__01kwtsanhgcpy8t503d5p0254h.chat.setVariable("userInfo", JSON.stringify({
       "customerName": "Kevin",
       "customerId": "z1y2",
     }));
@@ -23,7 +24,7 @@ function App() {
 
   const sendNavigationsLog= () => {
     const pages = ['url1.com', 'url2.com', 'url3.com'];
-    window.__DECA_CLIENT__01kwjtk51hyf11teqa4szf6z9r.chat.setVariable("page_url", pages.join(', '));
+    window.__DECA_CLIENT__01kwtsanhgcpy8t503d5p0254h.chat.setVariable("page_url", pages.join(', '));
   };
 
   return (
